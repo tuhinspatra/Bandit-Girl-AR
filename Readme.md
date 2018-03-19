@@ -1,10 +1,12 @@
 # Bandit Girl
 
 
-> A Single player Augmented Reality Game
+> A Single player Augmented Reality Game for Android
 
 
 Bandit Girl is a single player augmented reality game where the user controls a female warrior surrounded by a horde of zombies. The player has to keep her alive and also collect the treasures hidden throughout the map. To help the player, she/he is provided with a AR powered birds-eye view through which she/he can analyse the whole map and plan the way out. 
+
+![Scene Demo](https://github.com/armag-pro/Bandit-Girl-AR/blob/master/scene_demo.gif)
 
 You can view the demo [here](https://youtu.be/tztKjRnAsEg)
 
