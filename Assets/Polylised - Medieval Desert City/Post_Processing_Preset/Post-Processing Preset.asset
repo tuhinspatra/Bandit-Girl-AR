@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
+  m_Name: Post-Processing Preset
+  m_EditorClassIdentifier: 
+  debugViews:
+    m_Enabled: 1
+    m_Settings:
+      mode: 0
+      depth:
+        scale: 1
+      motionVectors:
+        sourceOpacity: 1
+        motionImageOpacity: 0
+        motionImageAmplitude: 16
+        motionVectorsOpacity: 1
+        motionVectorsResolution: 24
+        motionVectorsAmplitude: 64
+  fog:
+    m_Enabled: 1
+    m_Settings:
+      excludeSkybox: 1
+  antialiasing:
+    m_Enabled: 1
+    m_Settings:
+      method: 0
+      fxaaSettings:
+        preset: 4
+      taaSettings:
+        jitterSpread: 0.75
+        sharpen: 0.3
+        stationaryBlending: 0.95
+        motionBlending: 0.85
+  ambientOcclusion:
+    m_Enabled: 1
+    m_Settings:
+      intensity: 0.58
+      radius: 0.3
+      sampleCount: 16
+      downsampling: 1
+      forceForwardCompatibility: 0
+      ambientOnly: 0
+      highPrecision: 1
+  screenSpaceReflection:
+    m_Enabled: 0
+    m_Settings:
+      reflection:
+        blendType: 0
+        reflectionQuality: 0
+        maxDistance: 300
+        iterationCount: 503
+        stepSize: 10
+        widthModifier: 5.5
+        reflectionBlur: 4.59
+        reflectBackfaces: 0
+      intensity:
+        reflectionMultiplier: 2
+        fadeDistance: 486
+        fresnelFade: 1
+        fresnelFadePower: 1
+      screenEdgeMask:
+        intensity: 0.03
+  depthOfField:
+    m_Enabled: 1
+    m_Settings:
+      focusDistance: 2
+      aperture: 2
+      focalLength: 47
+      useCameraFov: 1
+      kernelSize: 3
+  motionBlur:
+    m_Enabled: 0
+    m_Settings:
+      shutterAngle: 270
+      sampleCount: 10
+      frameBlending: 0
+  eyeAdaptation:
+    m_Enabled: 1
+    m_Settings:
+      lowPercent: 1
+      highPercent: 24.562225
+      minLuminance: -18.9
+      maxLuminance: -0.4
+      keyValue: 0.18
+      dynamicKeyValue: 1
+      adaptationType: 0
+      speedUp: 2
+      speedDown: 1
+      logMin: -7
+      logMax: 10
+  bloom:
+    m_Enabled: 1
+    m_Settings:
+      bloom:
+        intensity: 0.16
+        threshold: 1.43
+        softKnee: 0.63
+        radius: 4.44
+        antiFlicker: 1
+      lensDirt:
+        texture: {fileID: 2800000, guid: 69e847bbff1cf5449a4ee0bbd045dbc9, type: 3}
+        intensity: 6.6
+  colorGrading:
+    m_Enabled: 1
+    m_Settings:
+      tonemapping:
+        tonemapper: 0
+        neutralBlackIn: 0.057
+        neutralWhiteIn: 4.53
+        neutralBlackOut: 0.0276
+        neutralWhiteOut: 15.34
+        neutralWhiteLevel: 4.1
+        neutralWhiteClip: 10
+      basic:
+        postExposure: 0.4
+        temperature: 10
+        tint: 1
+        hueShift: -2
+        saturation: 0.8
+        contrast: 1.08
+      channelMixer:
+        red: {x: 1, y: 0, z: 0}
+        green: {x: 0, y: 1, z: 0}
+        blue: {x: 0, y: 0, z: 1.06}
+        currentEditingChannel: 2
+      colorWheels:
+        mode: 1
+        log:
+          slope:
+            r: 1
+            g: 0.9614771
+            b: 0.81813544
+            a: 0.045454547
+          power:
+            r: 0.76899445
+            g: 0.77775615
+            b: 1
+            a: -0.06818182
+          offset:
+            r: 0.9629359
+            g: 0.9652155
+            b: 1
+            a: 0.022727273
+        linear:
+          lift:
+            r: 1
+            g: 1
+            b: 1
+            a: 0
+          gamma:
+            r: 1
+            g: 1
+            b: 1
+            a: 0
+          gain:
+            r: 1
+            g: 1
+            b: 1
+            a: 0
+      curves:
+        master:
+          curve:
+            m_Curve:
+            - time: 0
+              value: 0
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            - time: 1
+              value: 1
+              inSlope: 0.47787306
+              outSlope: 0.47787306
+              tangentMode: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 0
+          m_Loop: 0
+          m_ZeroValue: 0
+          m_Range: 1
+        red:
+          curve:
+            m_Curve:
+            - time: 0
+              value: 0
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            - time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 0
+          m_ZeroValue: 0
+          m_Range: 1
+        green:
+          curve:
+            m_Curve:
+            - time: 0
+              value: 0
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            - time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 0
+          m_ZeroValue: 0
+          m_Range: 1
+        blue:
+          curve:
+            m_Curve:
+            - time: 0
+              value: 0
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            - time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 1
+              tangentMode: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 0
+          m_ZeroValue: 0
+          m_Range: 1
+        hueVShue:
+          curve:
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 1
+          m_ZeroValue: 0.5
+          m_Range: 1
+        hueVSsat:
+          curve:
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 1
+          m_ZeroValue: 0.5
+          m_Range: 1
+        satVSsat:
+          curve:
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 0
+          m_ZeroValue: 0.5
+          m_Range: 1
+        lumVSsat:
+          curve:
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          m_Loop: 0
+          m_ZeroValue: 0.5
+          m_Range: 1
+        e_CurrentEditingCurve: 0
+        e_CurveY: 1
+        e_CurveR: 0
+        e_CurveG: 0
+        e_CurveB: 0
+  userLut:
+    m_Enabled: 0
+    m_Settings:
+      lut: {fileID: 2800000, guid: fa701c82c875fbf4cbdc4773191fa2d7, type: 3}
+      contribution: 0.375
+  chromaticAberration:
+    m_Enabled: 1
+    m_Settings:
+      spectralTexture: {fileID: 0}
+      intensity: 0.144
+  grain:
+    m_Enabled: 1
+    m_Settings:
+      colored: 1
+      intensity: 0.113
+      size: 1.1
+      luminanceContribution: 0.849
+  vignette:
+    m_Enabled: 1
+    m_Settings:
+      mode: 0
+      color:
+        r: 0.14705884
+        g: 0.14705884
+        b: 0.14705884
+        a: 1
+      center: {x: 0.5, y: 0.5}
+      intensity: 0.408
+      smoothness: 0.215
+      roundness: 1
+      mask: {fileID: 0}
+      opacity: 1
+      rounded: 0
+  dithering:
+    m_Enabled: 0
+    m_Settings: {}
+  monitors:
+    currentMonitorID: 0
+    refreshOnPlay: 0
+    histogramMode: 3
+    waveformExposure: 0.12
+    waveformY: 0
+    waveformR: 1
+    waveformG: 1
+    waveformB: 1
+    paradeExposure: 0.12
+    vectorscopeExposure: 0.12
+    vectorscopeShowBackground: 1
